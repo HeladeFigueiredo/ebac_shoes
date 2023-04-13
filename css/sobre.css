@@ -1,0 +1,58 @@
+.sobre {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 40px auto;
+}
+
+.sobre img {
+    width: 100%;
+}
+
+.sobre div {
+    margin-left: 42px;
+}
+
+.sobre h2 {
+    color: black;
+    border-bottom: 2px solid  black;
+    align-items: center;
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+.sobre p {
+    margin-top: 30px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1023px) {
+    .sobre {
+        display: block;
+        max-width: 641px;
+    }
+
+    .sobre figure {
+        margin-bottom: 25px;
+    }
+
+    .sobre div {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .sobre figure {
+        display: flex;
+    }
+    
+    .sobre img {
+        margin: 0 auto;
+        width: 84%;
+    }
+
+    .sobre div {
+        padding: 0 40px;
+    }
+}
+
